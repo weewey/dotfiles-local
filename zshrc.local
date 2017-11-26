@@ -1,0 +1,23 @@
+if [ "$TMUX" = "" ]; then tmux; fi
+
+set shell=bash\ -i
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+. ~/z.sh
+
+#gcloud cli
+source ~/google-cloud-sdk/completion.zsh.inc
+
+source ~/google-cloud-sdk/path.zsh.inc
+
+#kubectl code completion
+source <(kubectl completion zsh)
+
+export ECLIPSE_HOME="$HOME/java-oxygen/Eclipse.app/Contents/Eclipse/"
+
+#powerline
+. /Users/YewWee/Library/Python/2.7/lib/python/site-packages/powerline/bindings/zsh/powerline.zsh
+
+plugins=(git colorize github virtualenv node npm z extract pip python brew osx zsh-syntax-highlighting)

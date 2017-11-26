@@ -1,0 +1,6 @@
+Plug 'mxw/vim-jsx'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --js-completer --go-completer' }
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+Plug 'Raimondi/delimitMate'
+Plug 'airblade/vim-rooter'
