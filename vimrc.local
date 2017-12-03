@@ -6,6 +6,10 @@ let g:UltiSnipsJumpBackwardTrigger = '<C-k>'
 
 let g:EclimCompletionMethod = 'omnifunc'
 
+let g:vim_markdown_override_foldtext = 0
+let g:vim_markdown_folding_disabled = 1
+let g:vim_markdown_toc_autofit = 1
+
 python from powerline.vim import setup as powerline_setup
 python powerline_setup()
 python del powerline_setup
