@@ -1,9 +1,10 @@
 let g:jsx_ext_required = 0
-
 let g:UltiSnipsExpandTrigger = '<C-j>'
 let g:UltiSnipsJumpForwardTrigger = '<C-j>'
 let g:UltiSnipsJumpBackwardTrigger = '<C-k>'
 
+let g:ycm_server_keep_logfiles = 1
+let g:ycm_server_log_level = 'debug'
 let g:EclimCompletionMethod = 'omnifunc'
 
 let g:vim_markdown_override_foldtext = 0

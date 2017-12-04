@@ -5,19 +5,17 @@ set shell=bash\ -i
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-. ~/z.sh
-
-#gcloud cli
-source ~/google-cloud-sdk/completion.zsh.inc
-
-source ~/google-cloud-sdk/path.zsh.inc
-
-#kubectl code completion
-source <(kubectl completion zsh)
-
-export ECLIPSE_HOME="$HOME/java-oxygen/Eclipse.app/Contents/Eclipse/"
+export PATH="/Users/yewwee/Library/Python/2.7/bin:$PATH"
 
 #powerline
-. /Users/YewWee/Library/Python/2.7/lib/python/site-packages/powerline/bindings/zsh/powerline.zsh
+. $HOME/Library/Python/2.7/lib/python/site-packages/powerline/bindings/zsh/powerline.zsh
+
+export POWERLINE_COMMAND=powerline
+export POWERLINE_CONFIG_COMMAND=powerline-config
+
+powerline-daemon -q
+
+#zsh-syntax-highlighting
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 plugins=(git colorize github virtualenv node npm z extract pip python brew osx zsh-syntax-highlighting)
