@@ -5,4 +5,7 @@ Plug 'Valloric/YouCompleteMe', { 'do': './install.py --js-completer --go-complet
 Plug 'Raimondi/delimitMate'
 Plug 'airblade/vim-rooter'
 Plug 'godlygeek/tabular'
+Plug 'scrooloose/nerdtree'
 Plug 'plasticboy/vim-markdown'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'ryanoasis/vim-devicons'

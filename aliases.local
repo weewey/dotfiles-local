@@ -1,1 +1,2 @@
 alias start-eclimd='$ECLIPSE_HOME/eclimd'
+alias stree='/Applications/SourceTree.app/Contents/Resources/stree'

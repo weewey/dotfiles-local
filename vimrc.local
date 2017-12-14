@@ -3,6 +3,8 @@ let g:UltiSnipsExpandTrigger = '<C-j>'
 let g:UltiSnipsJumpForwardTrigger = '<C-j>'
 let g:UltiSnipsJumpBackwardTrigger = '<C-k>'
 
+set re=1
+
 let g:ycm_server_keep_logfiles = 1
 let g:ycm_server_log_level = 'debug'
 let g:EclimCompletionMethod = 'omnifunc'
@@ -14,3 +16,9 @@ let g:vim_markdown_toc_autofit = 1
 python from powerline.vim import setup as powerline_setup
 python powerline_setup()
 python del powerline_setup
+
+autocmd vimenter * NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+map <C-n> :NERDTreeToggle<CR>
+
+set guifont=DroidSansMono\ Nerd\ Font:h11
